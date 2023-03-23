@@ -1,5 +1,5 @@
 import sys
-#sys.path.append('/home/tumu/anaconda3/pkgs')
+sys.path.append('/home/tumu/anaconda3/pkgs')
 import numpy as np
 import math
 import PyKDL
