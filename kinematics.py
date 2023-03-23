@@ -46,7 +46,8 @@ class KINEMATICS():
 def printKDLChain(armChain):
     for idx in range(armChain.getNrOfSegments()):
             print('* ' + armChain.getSegment(idx).getName())
-
+            
+"""
 if __name__ == '__main__':
     kinematics = KINEMATICS('panda.urdf')
     print(kinematics.numbOfJoints)
@@ -61,7 +62,7 @@ if __name__ == '__main__':
     q_dot_out = PyKDL.JntArray(kinematics.numbOfJoints)
     kinematics.ikVelKDL.CartToJnt(q_in, v_in, q_dot_out)
     print("q_dot_out:", q_dot_out)
-    """
+    
 
     #endFrame = PyKDL.Frame(PyKDL.Rotation.RPY(0,0,0), PyKDL.Vector(0.3106,0.0056,0.5864))
     q_out = kinematics.inverseKinematicsPoseSolv(endFrame, q_in)
