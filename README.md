@@ -3,7 +3,7 @@ git submodule init \
 git submodule update\
 conda env create environment.yml \
 conda activate testWorkspace \
-testWorkspace/kdl_parser/kdl_parser_py \
+cd testWorkspace/kdl_parser/kdl_parser_py \
 pip3 install . \
 cd testWorkspace \ 
 python3 test.py \
