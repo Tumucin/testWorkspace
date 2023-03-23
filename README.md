@@ -1,6 +1,6 @@
 # testWorkspace
-git submodule init
-git submodule update
+git submodule init \
+git submodule update\
 conda env create environment.yml
 conda activate testWorkspace
 testWorkspace/kdl_parser/kdl_parser_py
